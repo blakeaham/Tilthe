@@ -95,6 +95,15 @@ p {
   font-family: 'Raleway';
 }
 
+.fixed-nav nav{
+  position: fixed;
+  margin-top: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  
+}
+
 #mainNav .navbar-brand {
   color: #e6a756;
 }
