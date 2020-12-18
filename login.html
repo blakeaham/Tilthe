@@ -43,7 +43,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav mx-auto">
-          <li class="nav-item active px-lg-4">
+          <li class="nav-item px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="index.html">Home
               <span class="sr-only">(current)</span>
             </a>
@@ -57,7 +57,7 @@
           <li class="nav-item px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="survey.html">Survey</a>
           </li>
-          <li class="nav-item px-lg-4">
+          <li class="nav-item active px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="login.html">Login</a>
           </li>
         </ul>
@@ -71,14 +71,15 @@
         <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="img/intro.png" alt="">
         <div class="intro-text left-0 text-center bg-faded p-5 rounded">
           <h2 class="section-heading mb-4">
-            <span class="section-heading-upper">A Pithy Summary</span>
-            <span class="section-heading-lower">Our Purpose</span>
+            <span class="section-heading-upper">Members Only</span>
+            <span class="section-heading-lower">Member Login</span>
           </h2>
-          <p class="mb-3">Here we would have some copy about what this is all about, and what someone can find here on
-            TilthWichita.com
+          <p class="mb-3">Login below and the section below will populate with privileged info
           </p>
+          <input type="text" id="uname" name="uname" placeholder="Username">
+          <input type="password" id="pword" name="pword" placeholder="Password">
           <div class="intro-button mx-auto">
-            <a class="btn btn-primary btn-xl" href="people.html">Who We Are</a>
+            <a class="btn btn-primary btn-xl" onclick="verifyUser()">Open Sesame!</a>
           </div>
         </div>
       </div>
@@ -91,14 +92,11 @@
         <div class="col-xl-9 mx-auto">
           <div class="cta-inner text-center rounded">
             <h2 class="section-heading mb-4">
-              <span class="section-heading-upper">Our Mission</span>
-              <span class="section-heading-lower">Our Goals</span>
+              <span class="section-heading-upper">The Vault</span>
+              <span class="section-heading-lower">Charter eyes only!</span>
+
             </h2>
-
-
-            <p class="mb-0">When you see this section, you'll read a vague mission statement where we communicate our
-              lofty values. Which will lead into a semi-vague request for involvement, and the suggestion to return to
-              read, or even reach out with ideas for features?</p>
+            <p id="memberInfo" class="mb-0">This is where content will show up if your credentials check out</p>
           </div>
         </div>
       </div>
@@ -115,6 +113,7 @@
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="js/global.js"></script>
+  <script src="js/login.js"></script>
 
 </body>
 
