@@ -66,7 +66,7 @@ peoplePix.forEach((pic) => {
 });
 
 const kylePic = document.getElementById("kyle-pic");
-const images = ["kyle_bio_pic.jpg", "kyle_bio_pic1.jpg", "kyle_bio_pic2.jpg"];
+const images = ["kyle_bio_pic.jpg", "kyle_bio_pic1.jpg", "kyle_bio_pic2.jpg", "kyle_bio_pic3.jpg"];
 let i = 0;
 const renew = setInterval(function () {
   if (images.length == i) {
