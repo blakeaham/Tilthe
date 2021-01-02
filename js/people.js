@@ -64,3 +64,15 @@ people.forEach((person) => {
 peoplePix.forEach((pic) => {
   pic.addEventListener("mouseover", coolFunction1);
 });
+
+const kylePic = document.getElementById("kyle-pic");
+const images = ["kyle_bio_pic.jpg", "kyle_bio_pic1.jpg", "kyle_bio_pic2.jpg"];
+let i = 0;
+const renew = setInterval(function () {
+  if (images.length == i) {
+    i = 0;
+  } else {
+    kylePic.src = "img/kyle/" + images[i];
+    i++;
+  }
+}, 6000);
